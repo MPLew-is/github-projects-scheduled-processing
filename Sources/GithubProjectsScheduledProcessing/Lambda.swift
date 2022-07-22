@@ -286,7 +286,7 @@ final class FunctionUrlLambdaHandler: LambdaHandler {
 			let _ = try await self.githubClient.createIssueComment(
 				url: commentsUrl,
 				body: """
-					@\(username) this item has been moved to status `\(fieldValueName)`
+					@\(username) this item has been moved to status `\(fieldValueName)`.
 					""",
 				for: installationId
 			)
